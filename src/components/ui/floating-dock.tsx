@@ -1,9 +1,3 @@
-/**
- * Note: Use position fixed according to your needs
- * Desktop navbar is better positioned at the bottom
- * Mobile navbar is better positioned at bottom right.
- **/
-
 import { cn } from "@/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
@@ -15,6 +9,7 @@ import {
   useTransform,
 } from "framer-motion";
 import Link from "next/link";
+import React from "react";
 import { useRef, useState } from "react";
 
 export const FloatingDock = ({
@@ -27,10 +22,10 @@ export const FloatingDock = ({
   mobileClassName?: string;
 }) => {
   return (
-    <>
+    <div className="dark">
       <FloatingDockDesktop items={items} className={desktopClassName} />
       <FloatingDockMobile items={items} className={mobileClassName} />
-    </>
+    </div>
   );
 };
 
@@ -43,7 +38,7 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div className={cn("fixed bottom-4 right-4 block md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -96,13 +91,13 @@ const FloatingDockDesktop = ({
   items: { title: string; icon: React.ReactNode; href: string }[];
   className?: string;
 }) => {
-  let mouseX = useMotionValue(Infinity);
+  const mouseX = useMotionValue(Infinity);
   return (
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "fixed bottom-4 left-1/2 transform -translate-x-1/2 hidden md:flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-neutral-500 px-4 pb-3",
         className
       )}
     >
@@ -124,41 +119,41 @@ function IconContainer({
   icon: React.ReactNode;
   href: string;
 }) {
-  let ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
-  let distance = useTransform(mouseX, (val) => {
-    let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+  const distance = useTransform(mouseX, (val) => {
+    const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
 
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-  let heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  const widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  const heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
 
-  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
-  let heightTransformIcon = useTransform(
+  const widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
+  const heightTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
     [20, 40, 20]
   );
 
-  let width = useSpring(widthTransform, {
+  const width = useSpring(widthTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  let height = useSpring(heightTransform, {
+  const height = useSpring(heightTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
 
-  let widthIcon = useSpring(widthTransformIcon, {
+  const widthIcon = useSpring(widthTransformIcon, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  let heightIcon = useSpring(heightTransformIcon, {
+  const heightIcon = useSpring(heightTransformIcon, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,

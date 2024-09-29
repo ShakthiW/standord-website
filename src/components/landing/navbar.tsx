@@ -19,15 +19,15 @@ export function FloatingNavbar() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
-      title: "Products",
+      title: "About Us",
       icon: (
         <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/about",
     },
     {
       title: "Components",
