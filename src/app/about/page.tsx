@@ -1,5 +1,4 @@
 import { AboutUsGenerator } from "@/components/about-us";
-import PageHeading from "@/components/page-heading";
 import Image from "next/image";
 import React from "react";
 
@@ -8,9 +7,9 @@ const AboutUs = () => {
     <>
       <div className="min-h-screen flex flex-col justify-center">
         {/* Page Heading */}
-        <PageHeading title="About Us" />
+        {/* <PageHeading title="About Us" /> */}
 
-        <div className="flex flex-grow lg:flex-row flex-col-reverse py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto justify-between items-center lg:gap-12">
+        <div className="flex flex-grow lg:flex-row flex-col-reverse py-8 px-4 sm:px-6 -mt-24 lg:px-8 max-w-7xl mx-auto justify-between items-center lg:gap-12">
           <div className="flex-grow text-sm text-gray-700 dark:text-gray-300 leading-relaxed w-full">
             <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-4">
               Who We Are

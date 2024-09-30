@@ -1,9 +1,16 @@
-import Image from "next/image";
+import HeroSection from "@/components/landing/hero-section";
+import OurServices from "@/components/landing/our-services";
+import ProjectList from "@/components/landing/projects-list";
+import { WhyWaitAnyLonger } from "@/components/landing/why-wait";
 
 export default function Home() {
   return (
-    <div className="relative flex justify-center items-center">
-      <Image src={"/logo_dark_no_bg.png"} alt="logo" className=" scale-75 flexx items-center justify-center" width={354} height={88} />
+    <div className="">
+      <HeroSection />
+      <ProjectList />
+      <OurServices />
+
+      <WhyWaitAnyLonger />
     </div>
   );
 }
