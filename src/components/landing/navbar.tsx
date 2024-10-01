@@ -3,14 +3,11 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
 } from "@tabler/icons-react";
-import Image from "next/image";
+import { TbLetterS } from "react-icons/tb";
+import { BookOpenText, PhoneCallIcon } from "lucide-react";
+import { FaRegHandshake } from "react-icons/fa";
 
 export function FloatingNavbar() {
   const links = [
@@ -25,48 +22,61 @@ export function FloatingNavbar() {
     {
       title: "About Us",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
+        <TbLetterS className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
       ),
       href: "/about",
     },
     {
-      title: "Components",
+      title: "Publications",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
+        <BookOpenText className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
+      ),
+      href: "/publications",
+    },
+    // {
+    //   title: "Aceternity UI",
+    //   icon: (
+    //     <Image
+    //       src=""
+    //       width={20}
+    //       height={20}
+    //       alt="Aceternity Logo"
+    //     />
+    //   ),
+    //   href: "#",
+    // },
+    // {
+    //   title: "Instagram",
+    //   icon: (
+    //     <IconBrandFacebook className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
+    //   ),
+    //   href: "#",
+    // },
+    // {
+    //   title: "LinkedIn",
+    //   icon: (
+    //     <LinkedinIcon className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
+    //   ),
+    //   href: "https://www.linkedin.com/company/standord",
+    // },
+    // {
+    //   title: "GitHub",
+    //   icon: (
+    //     <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
+    //   ),
+    //   href: "#",
+    // },
+    {
+      title: "Why Choose Us",
+      icon: (
+        <FaRegHandshake className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
       ),
       href: "#",
     },
     {
-      title: "Aceternity UI",
+      title: "Book a Call",
       icon: (
-        <Image
-          src=""
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
-      ),
-      href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
+        <PhoneCallIcon className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
       ),
       href: "#",
     },

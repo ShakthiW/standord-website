@@ -1,4 +1,6 @@
-import { AboutUsGenerator } from "@/components/about-us";
+import { AboutUsGenerator } from "@/components/about/about-us";
+import AchievementsSection from "@/components/about/achievements";
+import { StandordTimeline } from "@/components/about/time-line";
 import Image from "next/image";
 import React from "react";
 
@@ -28,18 +30,8 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="bg-gray-100 dark:bg-gray-800 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-4">
-              Our Mission
-            </h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300">
-              To provide a platform for developers to learn, share and grow.
-            </p>
-          </div>
-        </div>
-      </div>
+      <StandordTimeline />
+      <AchievementsSection />
     </>
   );
 };
