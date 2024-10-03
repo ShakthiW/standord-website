@@ -1,12 +1,13 @@
+import Hero from "@/components/publications/hero/hero";
 import { ProjectShowcase } from "@/components/publications/projects";
 import React from "react";
 
 const Publications = () => {
   return (
     <>
-      <div className="min-h-screen">Hero for publications</div>
+      <Hero />
 
-      <div className="flex flex-col justify-center items-center min-h-screen">
+      <div className="flex py-10 lg:py-40 flex-col justify-center items-center min-h-screen">
         <div className="text-center max-w-3xl">
           <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
             Crafting the Future of Technology
