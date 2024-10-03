@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/landing/hero-section";
+import Hero from "@/components/landing/hero/hero";
 import OpenCards from "@/components/landing/open-cards";
 import { OurServices } from "@/components/landing/our-services";
 import { OurServicesBento } from "@/components/landing/projects-list";
@@ -8,9 +9,7 @@ import { WhyWaitAnyLonger } from "@/components/landing/why-wait";
 export default function Home() {
   return (
     <div className="">
-      <div className="min-h-screen">
-        <HeroSection />
-      </div>
+      <Hero />
       <OurServicesBento />
 
       <div className="flex flex-col justify-center items-center min-h-[90vh] mt-20">
