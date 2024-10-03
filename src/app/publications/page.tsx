@@ -6,7 +6,7 @@ const Publications = () => {
     <>
       <div className="min-h-screen">Hero for publications</div>
 
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center min-h-screen">
         <div className="text-center max-w-3xl">
           <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
             Crafting the Future of Technology
@@ -17,6 +17,8 @@ const Publications = () => {
         </div>
         <ProjectShowcase />
       </div>
+
+      <div className="min-h-screen">Footer</div>
     </>
   );
 };

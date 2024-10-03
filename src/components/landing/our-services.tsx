@@ -1,87 +1,109 @@
-"use client";
+import { cn } from "@/lib/utils";
+import {
+  IconAdjustmentsBolt,
+  IconCloud,
+  IconCurrencyDollar,
+  IconEaseInOut,
+  IconHeart,
+  IconHelp,
+  IconRouteAltLeft,
+  IconTerminal2,
+} from "@tabler/icons-react";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
-import React from "react";
-
-const services = [
-  {
-    title: "Cutting-Edge Technology",
-    description:
-      "We use the latest tools and technologies to create robust, scalable, and efficient solutions.",
-    image: "/images/technology.png",
-  },
-  {
-    title: "Innovation at Core",
-    description:
-      "Our team thrives on innovation, delivering unique and creative solutions to complex problems.",
-    image: "/images/innovation.png",
-  },
-  {
-    title: "Expert Team",
-    description:
-      "Our professionals have deep expertise in various domains, bringing your vision to life.",
-    image: "/images/expert_team.png",
-  },
-  {
-    title: "Data-Driven Strategy",
-    description:
-      "We make decisions based on data to ensure your business growth and success.",
-    image: "/images/strategy.png",
-  },
-  {
-    title: "Scalability & Growth",
-    description:
-      "Our solutions are built with growth in mind, enabling seamless scalability.",
-    image: "/images/growth.png",
-  },
-  {
-    title: "24/7 Support",
-    description:
-      "We provide continuous support to ensure your business operations run smoothly.",
-    image: "/images/support.png",
-  },
-];
-
-const OurServices = () => {
+export function OurServices() {
+  const features = [
+    {
+      title: "Built for developers",
+      description:
+        "Built for engineers, developers, dreamers, thinkers and doers.",
+      icon: <IconTerminal2 />,
+    },
+    {
+      title: "Ease of use",
+      description:
+        "It's as easy as using an Apple, and as expensive as buying one.",
+      icon: <IconEaseInOut />,
+    },
+    {
+      title: "Pricing like no other",
+      description:
+        "Our prices are best in the market. No cap, no lock, no credit card required.",
+      icon: <IconCurrencyDollar />,
+    },
+    {
+      title: "100% Uptime guarantee",
+      description: "We just cannot be taken down by anyone.",
+      icon: <IconCloud />,
+    },
+    {
+      title: "Multi-tenant Architecture",
+      description: "You can simply share passwords instead of buying new seats",
+      icon: <IconRouteAltLeft />,
+    },
+    {
+      title: "24/7 Customer Support",
+      description:
+        "We are available a 100% of the time. Atleast our AI Agents are.",
+      icon: <IconHelp />,
+    },
+    {
+      title: "Money back guarantee",
+      description:
+        "If you donot like EveryAI, we will convince you to like us.",
+      icon: <IconAdjustmentsBolt />,
+    },
+    {
+      title: "And everything else",
+      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      icon: <IconHeart />,
+    },
+  ];
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-background">
-      {/* Hero Heading */}
-      <div className="text-center max-w-3xl mb-16">
-        <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-          Crafting the Future of Technology
-        </h1>
-        <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300">
-          Innovative solutions designed to accelerate your business.
-        </p>
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+      {features.map((feature, index) => (
+        <Feature key={feature.title} {...feature} index={index} />
+      ))}
+    </div>
+  );
+}
 
-      {/* Grid-like Sections with Framer Motion */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl px-4">
-        {services.map((service, index) => (
-          <motion.div
-            key={index}
-            className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg"
-            initial={{ opacity: 0, y: 50 }} // Initial position and opacity
-            whileInView={{ opacity: 1, y: 0 }} // Animate when in view
-            transition={{
-              duration: 0.5,
-              delay: index * 0.2, // Delay animation for staggered effect
-            }}
-            viewport={{ once: true }} // Ensure animation happens only once
-          >
-            <Image src={service.image} alt={service.title} width={64} height={64} />
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-4">
-              {service.title}
-            </h2>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">
-              {service.description}
-            </p>
-          </motion.div>
-        ))}
+const Feature = ({
+  title,
+  description,
+  icon,
+  index,
+}: {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  index: number;
+}) => {
+  return (
+    <div
+      className={cn(
+        "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
+        (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
+        index < 4 && "lg:border-b dark:border-neutral-800"
+      )}
+    >
+      {index < 4 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+      )}
+      {index >= 4 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+      )}
+      <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
+        {icon}
       </div>
+      <div className="text-lg font-bold mb-2 relative z-10 px-10">
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+          {title}
+        </span>
+      </div>
+      <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+        {description}
+      </p>
     </div>
   );
 };
-
-export default OurServices;
