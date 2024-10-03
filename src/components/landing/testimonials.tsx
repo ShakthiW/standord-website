@@ -40,7 +40,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="flex h-[50vh] justify-center items-center">
+    <section className="flex h-[50vh] max-w-5xl justify-center items-center">
       <div>
         {Testimonial_data.map(
           (testimonial, index) =>
