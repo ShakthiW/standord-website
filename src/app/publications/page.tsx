@@ -1,3 +1,4 @@
+import HorizontalScrollCarousel from "@/components/horizontal-scroll";
 import Hero from "@/components/publications/hero/hero";
 import { ProjectShowcase } from "@/components/publications/projects";
 import React from "react";
@@ -17,9 +18,9 @@ const Publications = () => {
           </p>
         </div>
         <ProjectShowcase />
-      </div>
 
-      <div className="min-h-screen">Footer</div>
+        <HorizontalScrollCarousel />
+      </div>
     </>
   );
 };

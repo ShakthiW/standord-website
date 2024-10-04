@@ -67,18 +67,18 @@ export function FloatingNavbar() {
     //   href: "#",
     // },
     {
-      title: "Why Choose Us",
+      title: "Our Approach",
       icon: (
         <FaRegHandshake className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
       ),
-      href: "#",
+      href: "approach",
     },
     {
       title: "Book a Call",
       icon: (
         <PhoneCallIcon className="h-full w-full text-neutral-500 dark:text-[#5ce1e6]" />
       ),
-      href: "#",
+      href: "/contact-us",
     },
   ];
   return (
