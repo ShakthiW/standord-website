@@ -1,8 +1,7 @@
 import ContactDetailsCard from "@/components/contact-us/contact-details";
+import SocialIcons from "@/components/footer/social-icons";
 import Hero from "@/components/landing/hero/hero";
 import React from "react";
-import { FaXTwitter } from "react-icons/fa6";
-import { FiFacebook, FiInstagram, FiLinkedin, FiYoutube } from "react-icons/fi";
 
 const ContactUs = () => {
   return (
@@ -55,7 +54,7 @@ const ContactUs = () => {
               ></textarea>
             </div>
             <div>
-              <button className="w-full py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-md">
+              <button className="w-full px-8 py-2 rounded-md bg-[#5ce1e6] text-gray-700 font-bold transition duration-200 hover:bg-white hover:text-gray-700 border-2 border-transparent hover:border-[#5ce1e6]">
                 Send Message
               </button>
             </div>
@@ -65,21 +64,7 @@ const ContactUs = () => {
         {/* Social Icons */}
         <div className="mt-8 flex justify-center space-x-4 w-full">
           {/* Add react-icons like FiFacebook, FiTwitter etc */}
-          <span className="bg-gray-700 p-3 rounded-full text-teal-500 hover:bg-teal-500 hover:text-white">
-            <FiFacebook />
-          </span>
-          <span className="bg-gray-700 p-3 rounded-full text-teal-500 hover:bg-teal-500 hover:text-white">
-            <FiLinkedin />
-          </span>
-          <span className="bg-gray-700 p-3 rounded-full text-teal-500 hover:bg-teal-500 hover:text-white">
-            <FiInstagram />
-          </span>
-          <span className="bg-gray-700 p-3 rounded-full text-teal-500 hover:bg-teal-500 hover:text-white">
-            <FaXTwitter />
-          </span>
-          <span className="bg-gray-700 p-3 rounded-full text-teal-500 hover:bg-teal-500 hover:text-white">
-            <FiYoutube />
-          </span>
+          <SocialIcons />
         </div>
       </section>
     </>
