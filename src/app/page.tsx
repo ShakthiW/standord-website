@@ -16,12 +16,12 @@ export default function Home() {
         buttonLink="#about"
         spotlights={[
           {
-            fill: "white",
+            fill: "#5ce1e6",
             className: "-top-40 -left-10 md:-left-32 md:-top-20 h-screen",
           },
-          { fill: "pink", className: "h-[80vh] w-[50vw] top-10 left-full" },
+          { fill: "#5ce1e6", className: "h-[80vh] w-[50vw] top-10 left-full" },
         ]}
-        backgroundGradient="from-teal-300 to-blue-500"
+        backgroundGradient="from-primary to-blue-500"
       />
       <OurServicesBento />
 

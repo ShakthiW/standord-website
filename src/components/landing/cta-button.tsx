@@ -11,10 +11,10 @@ const ActionButton = () => {
       whileHover="hover" // Define hover animation
     >
       {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-primary rounded-lg" />
 
       {/* Button content */}
-      <div className="px-8 py-2 flex justify-center items-center gap-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
+      <div className="px-8 py-2 flex justify-center items-center gap-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent hover:text-gray-700">
         <span className="tracking-normal">Book a call now</span>
 
         {/* Motion Arrow */}
