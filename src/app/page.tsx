@@ -1,4 +1,4 @@
-import Hero from "@/components/landing/hero/hero";
+import Hero from "@/components/hero-section";
 import OpenCards from "@/components/landing/open-cards";
 import { OurServices } from "@/components/landing/our-services";
 import { OurServicesBento } from "@/components/landing/projects-list";
@@ -8,7 +8,21 @@ import { WhyWaitAnyLonger } from "@/components/landing/why-wait";
 export default function Home() {
   return (
     <div className="">
-      <Hero />
+      <Hero
+        title="Dynamic Web Magic"
+        subtitle="Next.js Developer"
+        description="Hi! I'm Adrian, a Next.js Developer based in Croatia."
+        buttonText="Book a Free Consultation"
+        buttonLink="#about"
+        spotlights={[
+          {
+            fill: "white",
+            className: "-top-40 -left-10 md:-left-32 md:-top-20 h-screen",
+          },
+          { fill: "pink", className: "h-[80vh] w-[50vw] top-10 left-full" },
+        ]}
+        backgroundGradient="from-teal-300 to-blue-500"
+      />
       <OurServicesBento />
 
       <div className="flex flex-col justify-center items-center min-h-[90vh] mt-20">
