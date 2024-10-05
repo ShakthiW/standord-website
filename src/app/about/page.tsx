@@ -19,7 +19,7 @@ const AboutUs = () => {
           },
           { fill: "pink", className: "h-[80vh] w-[50vw] top-10 left-full" },
         ]}
-        backgroundGradient="from-teal-300 to-blue-500"
+        backgroundGradient="from-primary to-blue-500"
       />
 
       <StandordTimeline />

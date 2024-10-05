@@ -58,7 +58,7 @@ const AchievementsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+              <h3 className="text-xl font-semibold text-indigo-600 dark:text-primary mb-2">
                 {achievement.year}
               </h3>
               <h4 className="text-lg font-medium mb-2">{achievement.title}</h4>
