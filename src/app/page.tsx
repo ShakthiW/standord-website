@@ -1,4 +1,3 @@
-import { HeroSection } from "@/components/landing/hero-section";
 import Hero from "@/components/landing/hero/hero";
 import OpenCards from "@/components/landing/open-cards";
 import { OurServices } from "@/components/landing/our-services";

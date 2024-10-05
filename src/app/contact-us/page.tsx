@@ -1,5 +1,5 @@
+import { ShowAllLinks } from "@/components/about/all-links";
 import ContactDetailsCard from "@/components/contact-us/contact-details";
-import SocialIcons from "@/components/footer/social-icons";
 import Hero from "@/components/landing/hero/hero";
 import React from "react";
 
@@ -61,11 +61,15 @@ const ContactUs = () => {
           </form>
         </div>
 
-        {/* Social Icons */}
-        <div className="mt-8 flex justify-center space-x-4 w-full">
-          {/* Add react-icons like FiFacebook, FiTwitter etc */}
-          <SocialIcons />
+        <div className="text-center mb-8 w-full mt-16">
+          <h1 className="text-4xl font-semibold">Connect Through</h1>
+          <h1 className="text-4xl font-semibold">Social Media</h1>
         </div>
+
+        {/* Social Icons */}
+        <div className="mt-16">
+          <ShowAllLinks />
+          </div>
       </section>
     </>
   );

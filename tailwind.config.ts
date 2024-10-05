@@ -23,14 +23,6 @@ module.exports = {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -53,6 +45,27 @@ module.exports = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        primary: "#5ce1e6",
+        "primary-content": "#09383a",
+        "primary-dark": "#30d9df",
+        "primary-light": "#88e9ed",
+
+        secondary: "#a65ce6",
+        "secondary-content": "#23093a",
+        "secondary-dark": "#8e30df",
+        "secondary-light": "#be88ed",
+
+        copy: "#fbfbfb",
+        "copy-light": "#d6dbdc",
+        "copy-lighter": "#9facac",
+
+        success: "#5ce65c",
+        warning: "#e6e65c",
+        error: "#e65c5c",
+
+        "success-content": "#093a09",
+        "warning-content": "#3a3a09",
+        "error-content": "#3a0909"
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

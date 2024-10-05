@@ -1,5 +1,5 @@
 import React from "react";
-import { FiCreditCard, FiMail, FiPhoneCall, FiUser } from "react-icons/fi";
+import { FiCreditCard, FiMail, FiPhoneCall } from "react-icons/fi";
 
 const ContactDetailsCard = () => {
   return (
@@ -21,7 +21,7 @@ const ContactDetailsCard = () => {
 interface CardProps {
   title: string;
   subtitle: string;
-  Icon: React.ComponentType<any>;
+  Icon: React.ElementType;
   href: string;
 }
 
