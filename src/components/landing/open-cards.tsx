@@ -56,7 +56,7 @@ const OpenCards = () => {
   ];
 
   return (
-    <section className="py-16 pb-[300px] bg-background">
+    <section className="bg-background">
       <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-5">
         {cardImages.map((image, index) => (
           <motion.div

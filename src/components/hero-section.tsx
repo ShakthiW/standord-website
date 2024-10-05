@@ -21,7 +21,6 @@ interface HeroProps {
 const DefaultButtonIcon = <FaLocationArrow />;
 
 const Hero: React.FC<HeroProps> = ({
-  title,
   subtitle,
   description,
   buttonText,
@@ -58,7 +57,7 @@ const Hero: React.FC<HeroProps> = ({
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-7xl lg:max-w-7xl flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-[#5ce1e6] max-w-80">
+          <p className="uppercase tracking-widest text-xs text-center text-secondary max-w-80">
             {subtitle}
           </p>
 

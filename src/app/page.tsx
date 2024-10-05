@@ -4,10 +4,11 @@ import { OurServices } from "@/components/landing/our-services";
 import { OurServicesBento } from "@/components/landing/projects-list";
 import Testimonials from "@/components/landing/testimonials";
 import { WhyWaitAnyLonger } from "@/components/landing/why-wait";
+import SectionWithHeader from "@/components/middle-header-section";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="max-w-screen">
       <Hero
         title="Dynamic Web Magic"
         subtitle="Next.js Developer"
@@ -23,43 +24,37 @@ export default function Home() {
         ]}
         backgroundGradient="from-primary to-blue-500"
       />
-      <OurServicesBento />
+      <SectionWithHeader
+        title="Crafting the Future of Technology"
+        description="Innovative solutions designed to accelerate your business."
+        minHeight="90vh"
+      >
+        <OurServicesBento />
+      </SectionWithHeader>
 
-      <div className="flex flex-col justify-center items-center min-h-[90vh] mt-20">
-        <div className="text-center max-w-3xl mb-16">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-            Crafting the Future of Technology
-          </h1>
-          <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300">
-            Innovative solutions designed to accelerate your business.
-          </p>
-        </div>
+      <SectionWithHeader
+        title="Crafting the Future of Technology"
+        description="Innovative solutions designed to accelerate your business."
+        minHeight="60vh"
+      >
         <OpenCards />
-      </div>
+      </SectionWithHeader>
 
-      <div className="flex flex-col justify-start items-center min-h-[60vh]">
-        <div className="text-center max-w-3xl mb-16">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-            Crafting the Future of Technology
-          </h1>
-          <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300">
-            Innovative solutions designed to accelerate your business.
-          </p>
-        </div>
+      <SectionWithHeader
+        title="Crafting the Future of Technology"
+        description="Innovative solutions designed to accelerate your business."
+        minHeight="60vh"
+      >
         <OurServices />
-      </div>
+      </SectionWithHeader>
 
-      <div className="flex flex-col justify-center items-center min-h-[90vh]">
-        <div className="text-center max-w-3xl mb-16">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-            Crafting the Future of Technology
-          </h1>
-          <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300">
-            Innovative solutions designed to accelerate your business.
-          </p>
-        </div>
+      <SectionWithHeader
+        title="Crafting the Future of Technology"
+        description="Innovative solutions designed to accelerate your business."
+        minHeight="60vh"
+      >
         <Testimonials />
-      </div>
+      </SectionWithHeader>
 
       <WhyWaitAnyLonger />
     </div>

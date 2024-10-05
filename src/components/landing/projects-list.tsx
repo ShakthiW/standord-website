@@ -43,29 +43,7 @@ export function OurServicesBento() {
     },
   ];
   return (
-    <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
-      {/* <div className="px-8">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with thousands of features
-        </h4>
-
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
-        </p>
-      </div> */}
-
-      <div className="flex flex-col justify-center items-center w-full">
-        <div className="text-center max-w-3xl mb-16">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-            Crafting the Future of Technology
-          </h1>
-          <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300">
-            Innovative solutions designed to accelerate your business.
-          </p>
-        </div>
-      </div>
-
+    <div className="relative z-20 max-w-7xl mx-auto">
       <div className="relative ">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
           {features.map((feature) => (
