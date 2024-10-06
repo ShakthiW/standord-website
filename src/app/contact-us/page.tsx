@@ -1,5 +1,5 @@
-import { ShowAllLinks } from "@/components/about/all-links";
 import ContactDetailsCard from "@/components/contact-us/contact-details";
+import { ContactForm } from "@/components/contact-us/contact-form";
 import Hero from "@/components/hero-section";
 import React from "react";
 
@@ -36,54 +36,16 @@ const ContactUs = () => {
 
         <ContactDetailsCard />
 
-        <div className="text-center mb-8 w-full mt-16">
-          <h1 className="text-4xl font-semibold">Let’s Talk</h1>
-        </div>
+        <ContactForm />
 
-        {/* Contact Form */}
-        <div className="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg w-full">
-          <form className="space-y-6">
-            <div>
-              <label className="block text-sm mb-2">Name</label>
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-2 bg-gray-700 text-white rounded-md"
-              />
-            </div>
-            <div>
-              <label className="block text-sm mb-2">Email</label>
-              <input
-                type="email"
-                placeholder="you@example.com"
-                className="w-full px-4 py-2 bg-gray-700 text-white rounded-md"
-              />
-            </div>
-            <div>
-              <label className="block text-sm mb-2">Message</label>
-              <textarea
-                rows={5}
-                placeholder="What are you planning to build?"
-                className="w-full px-4 py-2 bg-gray-700 text-white rounded-md"
-              ></textarea>
-            </div>
-            <div>
-              <button className="w-full px-8 py-2 rounded-md bg-[#5ce1e6] text-gray-700 font-bold transition duration-200 hover:bg-white hover:text-gray-700 border-2 border-transparent hover:border-[#5ce1e6]">
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div className="text-center mb-8 w-full mt-16">
+        {/* <div className="text-center mb-8 w-full mt-16">
           <h1 className="text-4xl font-semibold">Connect Through</h1>
           <h1 className="text-4xl font-semibold">Social Media</h1>
         </div>
 
-        {/* Social Icons */}
         <div className="mt-16">
           <ShowAllLinks />
-          </div>
+        </div> */}
       </section>
     </>
   );

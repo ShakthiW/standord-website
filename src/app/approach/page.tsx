@@ -1,9 +1,13 @@
-import Hero from '@/components/hero-section'
-import React from 'react'
+import { Methodology } from "@/components/approach/methodology";
+import CalltoAction from "@/components/call-to-action";
+import Hero from "@/components/hero-section";
+import SectionWithHeader from "@/components/middle-header-section";
+import React from "react";
 
 const Approach = () => {
   return (
-    <Hero
+    <>
+      <Hero
         title="Dynamic Web Magic"
         subtitle="Next.js Developer"
         description="Hi! I'm Adrian, a Next.js Developer based in Croatia."
@@ -18,7 +22,20 @@ const Approach = () => {
         ]}
         backgroundGradient="from-teal-300 to-blue-500"
       />
-  )
-}
 
-export default Approach
+      <SectionWithHeader
+        title="Crafting the Future of Technology"
+        description="Innovative solutions designed to accelerate your business."
+        minHeight="60vh"
+      >
+        <div className="w-full">
+          <Methodology />
+        </div>
+      </SectionWithHeader>
+
+      <CalltoAction />
+    </>
+  );
+};
+
+export default Approach;

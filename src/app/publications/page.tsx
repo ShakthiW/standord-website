@@ -1,6 +1,7 @@
 import Hero from "@/components/hero-section";
 import SectionWithHeader from "@/components/middle-header-section";
 import { OurArticles } from "@/components/publications/articles";
+import OurBlogs from "@/components/publications/blogs";
 import { OurPublications } from "@/components/publications/our-publications";
 // import HorizontalScrollCarousel from "@/components/horizontal-scroll";
 // import { ProjectShowcase } from "@/components/publications/projects";
@@ -24,17 +25,7 @@ const Publications = () => {
         ]}
         backgroundGradient="from-teal-300 to-blue-500"
       />
-
-      <SectionWithHeader
-        title="Publications"
-        description="Check out our latest publications."
-        minHeight="70vh"
-      >
-        <div className="max-w-7xl">
-          <OurPublications />
-        </div>
-      </SectionWithHeader>
-
+      {/* 
       <SectionWithHeader
         title="Articles"
         description="Check out our latest articles."
@@ -44,6 +35,24 @@ const Publications = () => {
       >
         <div className="max-w-7xl">
           <OurArticles />
+        </div>
+      </SectionWithHeader> */}
+
+      <SectionWithHeader
+        title="Blogs"
+        description="Check out our latest blogs."
+        minHeight="50vh"
+      >
+        <OurBlogs />
+      </SectionWithHeader>
+
+      <SectionWithHeader
+        title="Publications"
+        description="Check out our latest publications."
+        minHeight="70vh"
+      >
+        <div className="max-w-7xl">
+          <OurPublications />
         </div>
       </SectionWithHeader>
     </>

@@ -19,7 +19,7 @@ const SectionWithHeader: React.FC<SectionWithHeaderProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col justify-start items-center ${lgmarTop} ${marTop}`}
+      className={`flex flex-col w-full justify-start items-center ${lgmarTop} ${marTop}`}
       style={{ minHeight }}
     >
       <div className="text-center max-w-3xl mb-16">
