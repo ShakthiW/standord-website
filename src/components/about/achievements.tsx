@@ -37,17 +37,8 @@ const achievements = [
 
 const AchievementsSection = () => {
   return (
-    <section className="py-16 bg-gray-100 dark:bg-background text-gray-800 dark:text-gray-200">
+    <section className="bg-gray-100 dark:bg-background text-gray-800 dark:text-gray-200">
       <div className="container mx-auto px-4 flex flex-col items-center justify-center max-w-7xl">
-        <div className="text-center max-w-3xl mb-16">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-            Crafting the Future of Technology
-          </h1>
-          <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300">
-            Innovative solutions designed to accelerate your business.
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {achievements.map((achievement, index) => (
             <motion.div

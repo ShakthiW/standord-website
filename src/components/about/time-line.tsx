@@ -148,7 +148,7 @@ export function StandordTimeline() {
     },
   ];
   return (
-    <div className="w-full mb-16 py-10 lg:py-40">
+    <div className="w-full lg:-mt-40 -mt-10 py-10 lg:py-40">
       <Timeline data={data} />
     </div>
   );

@@ -1,6 +1,7 @@
 import AchievementsSection from "@/components/about/achievements";
 import { StandordTimeline } from "@/components/about/time-line";
 import Hero from "@/components/hero-section";
+import SectionWithHeader from "@/components/middle-header-section";
 import React from "react";
 
 const AboutUs = () => {
@@ -22,8 +23,21 @@ const AboutUs = () => {
         backgroundGradient="from-primary to-blue-500"
       />
 
-      <StandordTimeline />
-      <AchievementsSection />
+      <SectionWithHeader
+        title="Crafting the Future of Technology"
+        description="Innovative solutions designed to accelerate your business."
+        minHeight="60vh"
+      >
+        <StandordTimeline />
+      </SectionWithHeader>
+
+      <SectionWithHeader
+        title="Crafting the Future of Technology"
+        description="Innovative solutions designed to accelerate your business."
+        minHeight="60vh"
+      >
+        <AchievementsSection />
+      </SectionWithHeader>
     </>
   );
 };
