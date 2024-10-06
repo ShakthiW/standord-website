@@ -4,6 +4,7 @@ import "./globals.css";
 import { FloatingNavbar } from "@/components/landing/navbar";
 import Image from "next/image";
 import Footer from "@/components/footer/footer";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,14 +33,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased dark`}
       >
-        <div className="relative flex justify-center items-center">
-          <Image
-            src={"/logo_dark_no_bg.png"}
-            alt="logo"
-            className=" scale-75 flexx items-center justify-center"
-            width={354}
-            height={88}
-          />
+        <div className="relative flex justify-center items-center z-[2000]">
+          <Link href="/">
+            <Image
+              src={"/logo_dark_no_bg.png"}
+              alt="logo"
+              className=" scale-75 flexx items-center justify-center cursor-pointer"
+              width={354}
+              height={88}
+            />
+          </Link>
         </div>
         <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50">
           <FloatingNavbar />
