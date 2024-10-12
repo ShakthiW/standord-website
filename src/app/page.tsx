@@ -1,7 +1,7 @@
 import Hero from "@/components/hero-section";
 import OpenCards from "@/components/landing/open-cards";
 import { OurServices } from "@/components/landing/our-services";
-import { OurServicesBento } from "@/components/landing/projects-list";
+import { OurServicesNew } from "@/components/landing/our-services-new";
 import Testimonials from "@/components/landing/testimonials";
 import { WhyWaitAnyLonger } from "@/components/landing/why-wait";
 import SectionWithHeader from "@/components/middle-header-section";
@@ -27,9 +27,10 @@ export default function Home() {
       <SectionWithHeader
         title="Crafting the Future of Technology"
         description="Innovative solutions designed to accelerate your business."
-        minHeight="90vh"
+        minHeight="60vh"
       >
-        <OurServicesBento />
+        {/* <OurServicesBento /> */}
+        <OurServicesNew />
       </SectionWithHeader>
 
       <SectionWithHeader
