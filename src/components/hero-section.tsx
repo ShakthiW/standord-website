@@ -18,7 +18,7 @@ interface HeroProps {
 }
 
 // Default button icon if none is provided
-const DefaultButtonIcon = <FaLocationArrow />;
+const DefaultButtonIcon = <FaLocationArrow />; 
 
 const Hero: React.FC<HeroProps> = ({
   subtitle,
@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({
   textEffectWords = "Transforming Concepts into Seamless User Experiences", // Default text for effect
 }) => {
   return (
-    <div className="pb-20 pt-36 max-h-[100vh]">
+    <div className="pb-20 pt-36 max-h-[100vh] -z-10">
       {/* Dynamic Spotlights */}
       <div>
         {spotlights.map((spotlight, index) => (

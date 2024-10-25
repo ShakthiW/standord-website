@@ -1,5 +1,6 @@
 import AchievementsSection from "@/components/about/achievements";
-import { StandordTimeline } from "@/components/about/time-line";
+// import { StandordTimeline } from "@/components/about/time-line";
+import WhoWeAre from "@/components/about/who-we-are";
 import Hero from "@/components/hero-section";
 import SectionWithHeader from "@/components/middle-header-section";
 import React from "react";
@@ -26,9 +27,10 @@ const AboutUs = () => {
       <SectionWithHeader
         title="Crafting the Future of Technology"
         description="Innovative solutions designed to accelerate your business."
-        minHeight="60vh"
+        minHeight="90vh"
       >
-        <StandordTimeline />
+        {/* <StandordTimeline /> */}
+        <WhoWeAre />
       </SectionWithHeader>
 
       <SectionWithHeader
