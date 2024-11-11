@@ -34,7 +34,7 @@ export default function Home() {
       </SectionWithHeader>
 
       <SectionWithHeader
-        title="Empowering Industries Through AI"
+        title="Transforming Industries Through AI"
         description="Discover how artificial intelligence is transforming diverse industries, driving innovation, and delivering smarter solutions."
         minHeight="60vh"
       >
