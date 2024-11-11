@@ -41,7 +41,7 @@ const Page: React.FC = () => {
         clientName="Fits Air"
       />
 
-      <Banner src="/logo_dark_no_bg.png" alt="Banner Image" />
+      <Banner src="/logooo.png" alt="Banner Image" />
 
       <div className="max-w-4xl mx-auto p-3">
         <Section title="Client Challenge">

@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({
     { fill: "blue", className: "left-80 top-28 h-[80vh] w-[50vw]" },
   ],
   backgroundGradient = "from-white to-gray-400",
-  textEffectWords = "Transforming Concepts into Seamless User Experiences", // Default text for effect
+  textEffectWords = "AI-Driven Innovation for Tomorrow's Businesses",
 }) => {
   return (
     <div className="pb-20 pt-36 max-h-[100vh] -z-10">

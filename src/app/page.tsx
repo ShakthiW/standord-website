@@ -11,10 +11,10 @@ export default function Home() {
     <div className="max-w-screen">
       <Hero
         title="Dynamic Web Magic"
-        subtitle="Next.js Developer"
-        description="Hi! I'm Adrian, a Next.js Developer based in Croatia."
+        subtitle=""
+        description="Empowering Your Business with Cutting-Edge AI Solutions"
         buttonText="Book a Free Consultation"
-        buttonLink="#about"
+        buttonLink="/contact"
         spotlights={[
           {
             fill: "#5ce1e6",
@@ -25,8 +25,8 @@ export default function Home() {
         backgroundGradient="from-primary to-blue-500"
       />
       <SectionWithHeader
-        title="Crafting the Future of Technology"
-        description="Innovative solutions designed to accelerate your business."
+        title="Driving Innovation with AI Powered Solutions"
+        description="Our comprehensive suite of AI services empowers businesses to optimize, automate, and elevate their operations."
         minHeight="60vh"
       >
         {/* <OurServicesBento /> */}
@@ -34,8 +34,8 @@ export default function Home() {
       </SectionWithHeader>
 
       <SectionWithHeader
-        title="Crafting the Future of Technology"
-        description="Innovative solutions designed to accelerate your business."
+        title="Empowering Industries Through AI"
+        description="Discover how artificial intelligence is transforming diverse industries, driving innovation, and delivering smarter solutions."
         minHeight="60vh"
       >
         <OpenCards />

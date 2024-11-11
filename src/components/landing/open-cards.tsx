@@ -47,12 +47,20 @@ const OpenCards = () => {
     "/causes/planet2.png",
   ];
 
+  const cardNames = [
+    "Healthcare",
+    "Finance",
+    "E-commerce",
+    "Manufacturing",
+    "Education",
+  ];
+
   const cardDescriptions = [
-    "This is a description, write whatever you need here, this is just text for a test",
-    "This is a description, write whatever you need here, this is just text for a test",
-    "This is a description, write whatever you need here, this is just text for a test",
-    "This is a description, write whatever you need here, this is just text for a test",
-    "This is a description, write whatever you need here, this is just text for a test",
+    "Revolutionize patient care with AI-driven diagnostics, personalized treatment plans, and advanced medical imaging.",
+    "Enhance risk management, fraud detection, and personalized banking experiences through predictive analytics and automation.",
+    "Empower your e-commerce business with intelligent product recommendations, personalized marketing, and 24/7 customer support.",
+    "Optimize production lines and predictive maintenance with AI-powered automation and real-time data insights.",
+    "Transform learning with adaptive education technologies, virtual tutors, and data-driven insights into student progress.",
   ];
 
   return (
@@ -90,7 +98,7 @@ const OpenCards = () => {
                 transition={{ duration: 0.5 }}
               >
                 <motion.h2 className="text-xl font-semibold text-white text-center">
-                  Card {index + 1}
+                  {cardNames[index]}
                 </motion.h2>
                 {(index === expandedIndex || isSmallScreen) && (
                   <motion.p

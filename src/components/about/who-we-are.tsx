@@ -9,7 +9,7 @@ const WhoWeAre = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
             <div className="img-box">
               <Image
-                src="https://pagedone.io/asset/uploads/1702034769.png"
+                src="/"
                 alt="About Us tailwind page"
                 className="max-lg:mx-auto object-cover"
                 height={100}
