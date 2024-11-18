@@ -13,48 +13,48 @@ import {
 export function OurServices() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Empowering Your Visionaries",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Fuel your ambitions and drive unparalleled breakthroughs with AI that aligns with your boldest goals.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "Effortless AI Integration",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "No hassle, no complex setup, just powerful, intuitive tools that feel like they were made just for you..",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
+      title: "Transparent Pricing",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Our pricing is designed to adapt to your needs, scaling up or down as you grow. Experience top-tier AI without the premium price tag.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Rock-Solid Reliability",
+      description: "Trust is everything. Your AI tools, available whenever you need them, no exceptions.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Tailored Solutions for Scale",
+      description: "We offer the flexibility and power to handle everything from small projects to massive data demands.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "Round-the-Clock Expertise",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "With rapid response times and proactive support, you're never left waiting when you need help the most.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "Results Guaranteed",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "If you're not completely satisfied, we'll go the extra mile to tailor our solutions to your needs.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Continuous Innovation",
+      description: "We're committed to evolving our technology, so you stay ahead.",
       icon: <IconHeart />,
     },
   ];

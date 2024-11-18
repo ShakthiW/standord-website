@@ -9,9 +9,10 @@ const Approach = () => {
     <>
       <Hero
         title="Dynamic Web Magic"
-        subtitle="Next.js Developer"
-        description="Hi! I'm Adrian, a Next.js Developer based in Croatia."
-        buttonText="Book a Free Consultation"
+        subtitle="How We Make AI Work for You"
+        description="Our Proven Approach to AI Success"
+        textEffectWords="Every solution we create is guided by a strategic approach designed to deliver real results. Discover how we tailor AI to meet your business goals."
+        buttonText="Learn About Our Approach"
         buttonLink="#about"
         spotlights={[
           {

@@ -40,7 +40,7 @@ const Page: React.FC = () => {
         clientName="Threedit"
       />
 
-      <Banner src="/logo_dark_no_bg.png" alt="Banner Image" />
+      <Banner src="/banners/cust_support.png" alt="Banner Image" />
 
       <div className="max-w-4xl mx-auto p-3">
         <Section title="Client Challenge">

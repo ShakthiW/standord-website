@@ -42,16 +42,16 @@ export default function Home() {
       </SectionWithHeader>
 
       <SectionWithHeader
-        title="Crafting the Future of Technology"
-        description="Innovative solutions designed to accelerate your business."
+        title="Why Choose Us for Your AI Solutions?"
+        description="What sets us apart and why we're the perfect partner to bring your AI vision to life."
         minHeight="60vh"
       >
         <OurServices />
       </SectionWithHeader>
 
       <SectionWithHeader
-        title="Crafting the Future of Technology"
-        description="Innovative solutions designed to accelerate your business."
+        title="What Our Clients Are Saying"
+        description="Real results from industry leaders who trust us to drive their AI transformation."
         minHeight="60vh"
       >
         <Testimonials />

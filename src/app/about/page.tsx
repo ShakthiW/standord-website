@@ -10,10 +10,11 @@ const AboutUs = () => {
     <>
       <Hero
         title="Dynamic Web Magic"
-        subtitle="Next.js Developer"
-        description="Hi! I'm Adrian, a Next.js Developer based in Croatia."
-        buttonText="Book a Free Consultation"
-        buttonLink="#about"
+        subtitle="Who We Are"
+        textEffectWords="Our team of AI experts, innovators, and strategists are dedicated to transforming businesses through groundbreaking AI solutions."
+        description="Driven by Passion, United by Innovation"
+        buttonText=""
+        buttonLink=""
         spotlights={[
           {
             fill: "white",

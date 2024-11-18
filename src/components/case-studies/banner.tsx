@@ -9,11 +9,11 @@ interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ src, alt, title }) => {
   return (
-    <div className="relative w-full h-[300px] md:h-[450px]">
+    <div className="relative w-full h-[300px] md:h-[450px] rounded-3xl">
       <Image
         src={src}
         alt={alt}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-scale-down rounded-3xl lg:object-cover"
         width={1920}
         height={1080}
       />

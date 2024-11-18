@@ -9,21 +9,22 @@ interface HeroProps {
   title: string;
   subtitle: string;
   description: string;
-  buttonText: string;
+  buttonText?: string;
   buttonIcon?: React.ReactNode;
-  buttonLink: string;
+  buttonLink?: string;
   spotlights?: { fill: string; className: string }[];
   backgroundGradient?: string;
   textEffectWords?: string;
 }
 
 // Default button icon if none is provided
-const DefaultButtonIcon = <FaLocationArrow />; 
+const DefaultButtonIcon = <FaLocationArrow />;
+const DefaultTextEffectWords = "AI Solutions, Web Magic, Dynamic Web Magic";
 
 const Hero: React.FC<HeroProps> = ({
   subtitle,
   description,
-  buttonText,
+  buttonText = "",
   buttonIcon = DefaultButtonIcon, // Use the default icon if none is provided
   buttonLink,
   spotlights = [
@@ -35,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({
     { fill: "blue", className: "left-80 top-28 h-[80vh] w-[50vw]" },
   ],
   backgroundGradient = "from-white to-gray-400",
-  textEffectWords = "AI-Driven Innovation for Tomorrow's Businesses",
+  textEffectWords = DefaultTextEffectWords,
 }) => {
   return (
     <div className="pb-20 pt-36 max-h-[100vh] -z-10">
@@ -74,13 +75,15 @@ const Hero: React.FC<HeroProps> = ({
             {description}
           </h1>
 
-          <a href={buttonLink}>
-            <MagicButton
-              title={buttonText}
-              icon={buttonIcon}
-              position="right"
-            />
-          </a>
+          {buttonText && buttonLink && (
+            <a href={buttonLink}>
+              <MagicButton
+                title={buttonText}
+                icon={buttonIcon}
+                position="right"
+              />
+            </a>
+          )}
         </div>
       </div>
     </div>

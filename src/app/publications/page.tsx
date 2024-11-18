@@ -12,8 +12,9 @@ const Publications = () => {
     <>
       <Hero
         title="Dynamic Web Magic"
-        subtitle="Next.js Developer"
-        description="Hi! I'm Adrian, a Next.js Developer based in Croatia."
+        subtitle="Stay Informed, Stay Ahead"
+        description="Explore Our Insights and Research"
+        textEffectWords="From AI trends to industry insights, dive into our publications and stay ahead of the curve with expert articles and cutting-edge research."
         buttonText="Book a Free Consultation"
         buttonLink="#about"
         spotlights={[

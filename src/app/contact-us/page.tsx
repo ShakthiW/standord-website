@@ -1,12 +1,12 @@
 import ContactDetailsCard from "@/components/contact-us/contact-details";
 import { ContactForm } from "@/components/contact-us/contact-form";
-import Hero from "@/components/hero-section";
+// import Hero from "@/components/hero-section";
 import React from "react";
 
 const ContactUs = () => {
   return (
     <>
-      <Hero
+      {/* <Hero
         title="Dynamic Web Magic"
         subtitle="Next.js Developer"
         description="Hi! I'm Adrian, a Next.js Developer based in Croatia."
@@ -20,10 +20,10 @@ const ContactUs = () => {
           { fill: "pink", className: "h-[80vh] w-[50vw] top-10 left-full" },
         ]}
         backgroundGradient="from-teal-300 to-blue-500"
-      />
-      <section className="bg-background text-white max-w-7xl mx-auto py-10 lg:py-40">
+      /> */}
+      <section className="bg-background text-white max-w-7xl mx-auto py-10 lg:py-20">
         {/* Hero Section */}
-        <div className="w-ful dark:bg-background flex flex-col items-center justify-center md:px-10">
+        {/* <div className="w-ful dark:bg-background flex flex-col items-center justify-center md:px-10">
           <div className="text-center max-w-3xl mb-16">
             <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
               Crafting the Future of Technology
@@ -32,7 +32,7 @@ const ContactUs = () => {
               Innovative solutions designed to accelerate your business.
             </p>
           </div>
-        </div>
+        </div> */}
 
         <ContactDetailsCard />
 
