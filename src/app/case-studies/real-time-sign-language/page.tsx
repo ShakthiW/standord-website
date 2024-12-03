@@ -51,7 +51,7 @@ const Page: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
       <Header
-        title="Case Study: MediQ - Your AI-Powered First Aid Companion"
+        title="Case Study: Real-Time Sign Language Translation Model"
         date="August 10, 2023"
         clientName="General Public"
       />
@@ -61,13 +61,14 @@ const Page: React.FC = () => {
       <div className="max-w-4xl mx-auto p-3">
         <Section title="Problem Background">
           <p>
-            During emergencies, every second counts. However, individuals often
-            face challenges such as panic, memory lapse, and fear of incorrect
-            response. Recognizing that most people lack medical training or may
-            struggle to recall basic first aid steps, our client developed MediQ
-            to bridge this gap. The goal: empower users with an AI that provides
-            instant, actionable first aid instructions, helping them navigate
-            emergencies confidently.
+            As part of our ongoing research initiatives, we developed a
+            real-time sign language translation model that identifies and
+            translates sign language gestures into letters using live camera
+            feeds. The project aims to enhance communication accessibility for
+            individuals with hearing or speech impairments. Currently, the model
+            focuses on translating individual letters, with ongoing research to
+            expand its capabilities to identify complete words through dynamic
+            hand movements.
           </p>
         </Section>
         <Section title="Proposed Solution">
@@ -81,72 +82,136 @@ const Page: React.FC = () => {
             dependency on emergency services for minor situations.
           </p>
         </Section>
-        <Section title="Implementation">
+        <Section title="Solution">
+          <p>
+            The real-time sign language translation model leverages advanced AI
+            frameworks and tools for gesture recognition and translation. The
+            project was built using open-source datasets for training, with
+            plans to transition to a custom dataset tailored to our objectives.
+            The solution includes the following components:
+          </p>
           <ol className=" list-decimal max-w-3xl mx-auto">
             <li>
-              <strong>User-Centered Design:</strong> Our approach focused on
-              ease of use under stress. We implemented a simple interface,
-              guiding users with voice-activated prompts and large, intuitive
-              buttons to reduce cognitive load during emergencies.
+              <strong>Real-Time Gesture Recognition:</strong> The model
+              processes live webcam feeds to identify hand movements and
+              gestures corresponding to sign language letters.
             </li>
             <li>
-              <strong>AI-Powered Assistance:</strong> Leveraging machine
-              learning, MediQ adapts its responses based on user interactions,
-              personalizing advice for specific emergencies.
+              <strong>AI-Driven Model Building:</strong> Leveraging TensorFlow
+              and Ultralytics, the model is fine-tuned for precision and speed
+              in identifying sign language gestures.
             </li>
             <li>
-              <strong>Safety Verification:</strong> The app underwent rigorous
-              testing to ensure instructions were accurate, adhering to medical
-              guidelines for first aid.
-            </li>
-            <li>
-              <strong>Deployment and Open-Source Release:</strong> MediQ is
-              available for download on GitHub, inviting contributions from the
-              open-source community to enhance functionality continuously.
-            </li>
-            <li>
-              <strong>Launch:</strong> MediQ was successfully launched on both
-              app stores, receiving positive feedback from users and medical
-              professionals.
+              <strong>Webcam Integration:</strong> OpenCV facilitates live video
+              capture, ensuring real-time processing and seamless user
+              interaction.
             </li>
           </ol>
         </Section>
-        <Section title="Outcomes">
+        <Section title="Implementation">
+          <p>
+            <strong>Model Training:</strong>
+          </p>
           <ul className=" list-disc max-w-3xl mx-auto">
             <li>
-              <strong>Reduced Panic in Emergencies:</strong> MediQ’s
-              step-by-step guidance helped users maintain calm and focus,
-              reducing anxiety in high-pressure situations.
+              <strong>Initial Dataset:</strong> The project started with an
+              open-source dataset for sign language gestures. The dataset was
+              processed and labeled for training purposes.
             </li>
             <li>
-              <strong>Increased User Confidence:</strong> By providing real-time
-              instructions, MediQ empowered users to take control of emergencies
-              confidently, potentially saving lives.
+              <strong>Fine-Tuning with TensorFlow and Ultralytics:</strong>{" "}
+              TensorFlow was used for deep learning tasks, while
+              Ultralytics&apos; framework supported object detection and
+              tracking to improve the accuracy of real-time translations.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Real-Time Translation:</strong>
+          </p>
+          <ul className="list-disc max-w-3xl mx-auto">
+            <li>
+              <strong>Webcam Integration:</strong> OpenCV enabled real-time
+              webcam feeds for gesture recognition, ensuring immediate
+              translation of sign language letters.
             </li>
             <li>
-              <strong>Streamlined Emergency Services:</strong> By empowering
-              users to handle minor incidents independently, MediQ reduces the
-              burden on emergency responders, ensuring resources are available
-              for more critical cases.
+              <strong>Letter-by-Letter Translation:</strong> The model maps
+              identified gestures to corresponding letters of the alphabet,
+              providing immediate translation output to the user.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Research and Future Enhancements:</strong>
+          </p>
+          <ul className="list-disc max-w-3xl mx-auto">
+            <li>
+              <strong>Custom Dataset Development:</strong>The team is actively
+              working on creating a custom dataset to improve accuracy and
+              extend the model’s capabilities to recognize dynamic gestures for
+              entire words.
+            </li>
+            <li>
+              <strong>Dynamic Gesture Recognition:</strong> Future research will
+              focus on expanding the model to recognize complete words and
+              phrases, enhancing communication accessibility for users.
             </li>
           </ul>
         </Section>
-        <Section title="Customer Feedback">
+        <Section title="Outcomes">
+          <ul>
+            <li>
+              <strong>Real-Time Functionality:</strong> The model successfully
+              translates sign language gestures into letters in real-time,
+              offering a stepping stone towards seamless communication for
+              users.
+            </li>
+            <li>
+              <strong>Enhanced Accessibility:</strong> By translating gestures
+              into text, the model provides a valuable tool for bridging
+              communication gaps between sign language users and non-sign
+              language speakers.
+            </li>
+            <li>
+              <strong>Scalable Framework:</strong> The modular architecture of
+              the model allows for future scalability to recognize dynamic
+              gestures and phrases.
+            </li>
+          </ul>
+        </Section>
+        <Section title="Future Enhancements">
           <p>
-            User feedback highlighted the intuitive design and practical,
-            accessible instructions as essential app features. Many users noted
-            the increased confidence they felt knowing they could rely on MediQ
-            during emergencies. The open-source community also contributed
-            valuable insights, helping MediQ evolve rapidly to meet user needs.
+            The project roadmap includes several enhancements aimed at expanding
+            the model’s capabilities and improving user experience:
           </p>
+          <ul className="list-disc max-w-3xl mx-auto">
+            <li>
+              <strong>Custom Dataset Training:</strong> Developing and
+              annotating a dataset tailored to the nuances of sign language
+              gestures to enhance model precision.
+            </li>
+            <li>
+              <strong>Dynamic Gesture Mapping:</strong> Future research will
+              focus on mapping dynamic hand movements to complete words,
+              enabling real-time translation of sign language phrases.
+            </li>
+            <li>
+              <strong>Mobile Application Integration:</strong> Plans include
+              integrating the model into a mobile application for on-the-go
+              translation, ensuring accessibility for users in various
+              scenarios.
+            </li>
+          </ul>
         </Section>
         <Section title="Conclusion">
           <p>
-            MediQ represents an innovative step towards accessible first aid for
-            everyone, combining AI’s responsiveness with a user-centric
-            approach. Its deployment demonstrates how technology can make
-            life-saving assistance accessible at any moment, right in the user’s
-            pocket.
+            The Real-Time Sign Language Translation Model demonstrates the
+            potential of AI to foster inclusivity and accessibility. By
+            utilizing cutting-edge frameworks like TensorFlow and Ultralytics,
+            the project provides a foundation for real-time sign language
+            interpretation, with ongoing advancements aimed at achieving
+            complete word recognition.
           </p>
         </Section>
         <Section title="">
@@ -154,7 +219,7 @@ const Page: React.FC = () => {
             Explore the project and contribute on GitHub:{" "}
             <Link href={"/"} className="underline hover:text-[#5ce1e6]">
               {" "}
-              MediQ GitHub Repository.{" "}
+              GitHub Repository.{" "}
             </Link>
           </p>
         </Section>
