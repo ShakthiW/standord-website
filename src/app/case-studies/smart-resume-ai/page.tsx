@@ -51,7 +51,7 @@ const Page: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
       <Header
-        title="Case Study: MediQ - Your AI-Powered First Aid Companion"
+        title="Case Study: AI-Powered Resume Writing and Interview Preparation Tool"
         date="August 10, 2023"
         clientName="General Public"
       />
@@ -61,53 +61,108 @@ const Page: React.FC = () => {
       <div className="max-w-4xl mx-auto p-3">
         <Section title="Problem Background">
           <p>
-            During emergencies, every second counts. However, individuals often
-            face challenges such as panic, memory lapse, and fear of incorrect
-            response. Recognizing that most people lack medical training or may
-            struggle to recall basic first aid steps, our client developed MediQ
-            to bridge this gap. The goal: empower users with an AI that provides
-            instant, actionable first aid instructions, helping them navigate
-            emergencies confidently.
+            Many new graduates face challenges in entering the job market, often
+            due to poorly crafted resumes that fail to pass automated applicant
+            tracking systems (ATS) or demonstrate their skills effectively.
+            Tailoring resumes to each job posting is time-consuming and takes
+            away time that could be spent improving professional skills. To
+            address this, we developed an AI-powered Resume Writing and
+            Interview Preparation Tool designed to simplify the job application
+            process, optimize resumes, and prepare candidates for interviews.
           </p>
         </Section>
         <Section title="Proposed Solution">
           <p>
-            We partnered with our client to develop MediQ, an AI-powered, first
-            aid mobile application, using Flutter for cross-platform
-            functionality. Accessible from any smartphone, MediQ provides
-            real-time, step-by-step guidance for managing various medical
-            crises, from severe allergic reactions to cardiac arrests. The app
-            was designed to mitigate emergency-related stress and reduce
-            dependency on emergency services for minor situations.
+            Our AI-powered solution automates the process of resume tailoring
+            and interview preparation. It combines data-driven research, natural
+            language processing (NLP), and advanced AI agents to create
+            optimized resumes and targeted interview questions, ensuring
+            candidates stand out in the competitive job market. Key features
+            include:
+            <ol className="">
+              <li>
+                <p>
+                  <strong>Job Posting Analysis:</strong>
+                </p>
+                <ul className="">
+                  <li>
+                    The first AI agent researches the job posting URL, extracts
+                    requirements, and profiles successful professionals in
+                    similar roles to identify key qualifications and skills.
+                  </li>
+                  <li>
+                    It performs a Google search to enrich the gathered data,
+                    ensuring the resume aligns with industry expectations.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  <strong>Resume Optimization:</strong>
+                </p>
+                <ul className="">
+                  <li>
+                    The second AI agent rewrites the uploaded LinkedIn resume
+                    using research insights.
+                  </li>
+                  <li>
+                    It highlights relevant projects (sourced from GitHub or
+                    other platforms) and incorporates keywords to ensure
+                    compatibility with ATS.
+                  </li>
+                  <li>
+                    The rewritten resume is tailored specifically for the
+                    targeted job, showcasing proficiency and making the
+                    candidate stand out.
+                  </li>
+                </ul>
+
+                <li>
+                  <p>
+                    <strong>Interview Preparation:</strong>
+                  </p>
+                  <ul className="">
+                    <li>
+                      The system generates potential interview questions based
+                      on the tailored resume and job description.
+                    </li>
+                    <li>
+                      It provides talking points and strategies to help
+                      candidates articulate their strengths and match their
+                      skills to the job requirements effectively.
+                    </li>
+                  </ul>
+                </li>
+              </li>
+            </ol>
           </p>
         </Section>
         <Section title="Implementation">
           <ol className=" list-decimal max-w-3xl mx-auto">
             <li>
-              <strong>User-Centered Design:</strong> Our approach focused on
-              ease of use under stress. We implemented a simple interface,
-              guiding users with voice-activated prompts and large, intuitive
-              buttons to reduce cognitive load during emergencies.
+              <strong>AI Agents for Research and Resume Writing:</strong> The
+              first agent extracts and analyzes data from job postings and
+              related resources to identify critical job requirements and
+              desirable attributes. Once the research is complete, the second
+              agent restructures the candidate’s resume by incorporating
+              tailored insights and ATS-friendly keywords to ensure the document
+              aligns with both the company’s expectations and automated systems.
             </li>
             <li>
-              <strong>AI-Powered Assistance:</strong> Leveraging machine
-              learning, MediQ adapts its responses based on user interactions,
-              personalizing advice for specific emergencies.
+              <strong>Project Curation:</strong> The system scans the
+              candidate’s GitHub or project portfolio to identify the most
+              relevant and impactful projects. These curated projects are then
+              prominently highlighted in the tailored resume to align with the
+              target job’s requirements, showcasing the candidate’s technical
+              and practical expertise effectively.
             </li>
             <li>
-              <strong>Safety Verification:</strong> The app underwent rigorous
-              testing to ensure instructions were accurate, adhering to medical
-              guidelines for first aid.
-            </li>
-            <li>
-              <strong>Deployment and Open-Source Release:</strong> MediQ is
-              available for download on GitHub, inviting contributions from the
-              open-source community to enhance functionality continuously.
-            </li>
-            <li>
-              <strong>Launch:</strong> MediQ was successfully launched on both
-              app stores, receiving positive feedback from users and medical
-              professionals.
+              <strong>Interview Preparation Tool:</strong> By utilizing the
+              optimized resume and details from the job posting, the system
+              predicts potential interview questions and generates talking
+              points. These are designed to strengthen the candidate’s
+              preparation by aligning their responses with the key
+              qualifications and requirements of the role.
             </li>
           </ol>
         </Section>
@@ -131,22 +186,45 @@ const Page: React.FC = () => {
             </li>
           </ul>
         </Section>
-        <Section title="Customer Feedback">
+        <Section title="Outcomes">
           <p>
-            User feedback highlighted the intuitive design and practical,
-            accessible instructions as essential app features. Many users noted
-            the increased confidence they felt knowing they could rely on MediQ
-            during emergencies. The open-source community also contributed
-            valuable insights, helping MediQ evolve rapidly to meet user needs.
+            Candidates using the tool experienced a significant increase in
+            interview opportunities, as their highly tailored resumes
+            effectively passed ATS filters. Additionally, the system provided
+            relevant interview questions and talking points, boosting
+            candidates’ confidence during interviews. By automating resume
+            tailoring and research, the tool also saved valuable time, allowing
+            users to focus on skill development and personal preparation.
           </p>
+        </Section>
+        <Section title="Future Enhancements">
+          <p>
+            The project roadmap includes several enhancements aimed at expanding
+            the model’s capabilities and improving user experience:
+          </p>
+          <ul className="list-disc max-w-3xl mx-auto">
+            <li>
+              <strong>Expanded Integrations:</strong> Incorporating platforms
+              like Behance and LinkedIn to pull additional portfolio elements.
+            </li>
+            <li>
+              <strong>Real-Time Interview Practice:</strong> Implementing a
+              feature for candidates to practice interviews with AI-generated
+              questions and receive feedback on their responses.
+            </li>
+            <li>
+              <strong>Interactive Coaching:</strong> Adding an AI-driven mock
+              interview feature with feedback for real-time practice.
+            </li>
+          </ul>
         </Section>
         <Section title="Conclusion">
           <p>
-            MediQ represents an innovative step towards accessible first aid for
-            everyone, combining AI’s responsiveness with a user-centric
-            approach. Its deployment demonstrates how technology can make
-            life-saving assistance accessible at any moment, right in the user’s
-            pocket.
+            The AI-powered Resume Writing and Interview Preparation Tool is a
+            transformative resource for new graduates entering the job market.
+            By combining advanced AI capabilities with practical job application
+            insights, this solution empowers candidates to stand out and succeed
+            in their career pursuits.
           </p>
         </Section>
         <Section title="">
