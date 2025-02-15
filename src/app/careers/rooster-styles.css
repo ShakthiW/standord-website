@@ -1,0 +1,52 @@
+/* Styles for Rooster Widget */
+.rooster-search {
+    padding: 0.6rem 1rem;
+    flex: 1;
+}
+
+.rooster-job {
+    padding: 1.4rem 0rem;
+}
+
+.rooster-job:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+    /* Softer divider color */
+}
+
+.rooster-job a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+.rooster-job h3 {
+    padding: 0;
+    margin: 0 0 0.4rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.rooster-job h4 {
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.rooster-department-header {
+    font-size: 1.4rem;
+    margin: 0px;
+    padding: 2rem 0rem;
+    color: rgb(21, 178, 211);
+}
+
+.rooster-department-header h3 {
+    margin-bottom: 0px;
+}
+
+.rooster-job .data-row {
+    padding: 0rem 0rem .4rem .2rem;
+}
+
+.rooster-job .inline-value {
+    padding-right: .6rem;
+}
